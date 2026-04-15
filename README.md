@@ -3,7 +3,7 @@
 A full-stack e-commerce demo application built to demonstrate end-to-end software development skills — from database design and event-driven REST API development to a connected React frontend. This project is intentionally scoped as a proof of concept, with no authentication, to keep the focus on architecture and integration.
 
 ## 🌐 Live Demo
-Frontend: https://e-com-front-7p36b3g5z-miro1380.vercel.app
+Frontend: https://e-com-front-ten.vercel.app/
 API: https://ecom-demo-production-f909.up.railway.app
 ---
 
