@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "./Navbar";
+import ProductList from "./ProductList";
 
 function ProductForm(){
     const [product, setProduct] = useState({
@@ -51,6 +52,8 @@ function ProductForm(){
                 <input className="form-control mb-2" name="price" placeholder="price" onChange={handleChange}></input>
                 <button className="btn btn-primary" onClick={handleSubmit}> Submit </button>
             </div>
+
+            <ProductList/>
         </>
     )
 }

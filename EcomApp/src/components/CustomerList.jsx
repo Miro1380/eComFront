@@ -28,7 +28,7 @@ function CustomerList(){
         <>
            <div>
 
-            <button className="btn btn-primary m-5" onClick={getCustomers}> {isLoaded? 'Hide Customers': 'Load Customer'} </button>
+            <button className="btn btn-primary m-4" onClick={getCustomers}> {isLoaded? 'Hide Customers': 'Load Customers'} </button>
             
             {/*
                 Check isLoaded and displays customer list when true
@@ -46,7 +46,6 @@ function CustomerList(){
                 ))
             }
            </div>
-  
         </>
     );
 }

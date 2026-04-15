@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "./Navbar";
+import CustomerList from "./CustomerList";
 
 function CustomerForm(){
    const [customer, setCustomer] = useState({
@@ -53,6 +54,9 @@ function CustomerForm(){
                 <button className="btn btn-primary" onClick={handleSubmit} onChange={handleChange}>Submit</button>
             </div>
         
+         <div>
+                <CustomerList/>
+        </div>
         </>
     )
 
