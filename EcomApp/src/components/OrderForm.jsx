@@ -16,13 +16,13 @@ function OrderForm(){
     fetch('https://ecom-demo-production-f909.up.railway.app/api/products')
         .then(r => r.json())
         .then(data => {
-            //console.log('First product:', data[0]); // 👈 see exact field names
+            //console.log('First product:', data[0]); // see exact field names
             setProducts(data);
         });
     fetch('https://ecom-demo-production-f909.up.railway.app/api/customers')
         .then(r => r.json())
         .then(data => {
-            //console.log('First customer:', data[0]); // 👈 see exact field names
+            //console.log('First customer:', data[0]); //  see exact field names
             setCustomers(data);
         });
 }, []);
@@ -62,17 +62,16 @@ function OrderForm(){
 
     const handleProductChange = (e) => {
         
-        console.log('selected value:', e.target.value);
-        console.log('products:', products.map(p => p.productId));
+        //console.log('selected value:', e.target.value);
+        //console.log('products:', products.map(p => p.productId));
+        //console.log('found product:', selectedProduct);        
+        
         const selectedProduct = products.find(p => p.productId === e.target.value);
-        console.log('found product:', selectedProduct);        
         setOrder(prev => ({
             ...prev,
             productId: e.target.value,
             price: selectedProduct ? selectedProduct.price : ''
         }));
-
-        
     }
     
     return (

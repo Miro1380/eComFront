@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import LandingPage from './components/Landingpage'
 import CustomerForm from './components/CustomerForm'
 import OrderForm from './components/OrderForm'
+import OrderForm2 from './components/OrderForm2'
 import ProductForm from './components/ProductForm'
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage/>}/>
-        <Route path="/order" element={<OrderForm/>}/>
+        <Route path="/order" element={<OrderForm2/>}/>
         <Route path="/product" element={<ProductForm/>}/>
         <Route path="customer" element={<CustomerForm/>}/>
       </Routes>

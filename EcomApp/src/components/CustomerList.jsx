@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CustomerCard from "./CustomerCard";
 
 function CustomerList(){
     const [customers, setCustomers]= useState([]);
@@ -35,16 +36,14 @@ function CustomerList(){
             */
                 isLoaded && <h2>Customers </h2>
             }
-            {                
+            <div className="customer-grid">
+                {                
                 customers.map((customer) => (
-                    <div key={customer.customerId} className="list-group mb-3">
-                        <ul>
-                            <li className="list-group-item">{customer.name}</li>
-                            <li className ="list-group-item">{customer.email}</li>
-                        </ul> 
-                    </div>  
+                   <CustomerCard key={customer.customerId} customer={customer}/>
                 ))
             }
+            </div>
+            
            </div>
         </>
     );
