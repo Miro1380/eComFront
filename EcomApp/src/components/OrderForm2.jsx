@@ -8,6 +8,7 @@ function OrderForm2(){
 
     const [products, setProducts] = useState([]);
     const [customers, setCustomers] = useState([]);
+    
     const selectedProductId = watch('productId');
     const selectedProduct = products.find(product => String (product.productId) === String (selectedProductId));
     const price = selectedProduct? selectedProduct.price : 0;
