@@ -4,6 +4,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import Carousel from "./Carousel";
+import Footer from "./Footer";
 
 function LandingPage(){
 
@@ -16,9 +17,11 @@ function LandingPage(){
             <p> Each link will take you to the respective viewing page. e.g. The 'add product' page will also allow you to view the current products available.</p>
             <p> There is no authorization required to view the pages. As such, its still a work in progress, more of a p.o.c. Thanks for checking it out.</p>
         </div>
-        <div className="container mt-5" style={{maxWidth:"600px", maxHeight:"300px", objectFit:'contain'}}>
+        <div className="container mt-5 mb-5" style={{maxWidth:"700px", position:'relative', overflow:'hidden'}}>
             <Carousel></Carousel>
         </div>
+        <Footer/>        
+        
        
     </>
     );

@@ -18,13 +18,13 @@ export default function Carousel() {
       loop={true}
     >
       <SwiperSlide>
-        <img src={StockImg1} className="w-100 h-75"alt="Stock Image 1"/> 
+        <img src={StockImg1} className="w-100" alt="Stock Image 1"/> 
       </SwiperSlide>
       <SwiperSlide>
-        <img src={StockImg2} className="w-100 h-75" alt="Stock Image 2"/>
+        <img src={StockImg2} className="w-100"alt="Stock Image 2"/>
       </SwiperSlide>
       <SwiperSlide>
-        <img src={StockImg3} className="w-100 h-75" alt="Stock Image 3"/>
+        <img src={StockImg3} className="w-100" alt="Stock Image 3"/>
       </SwiperSlide>
     </Swiper>
   );
