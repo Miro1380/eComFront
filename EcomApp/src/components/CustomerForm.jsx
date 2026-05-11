@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import CustomerList from "./CustomerList";
+import Footer from "./Footer";
 
 function CustomerForm(){
    const [customer, setCustomer] = useState({
@@ -57,6 +58,7 @@ function CustomerForm(){
          <div>
                 <CustomerList/>
         </div>
+        <Footer/>
         </>
     )
 

@@ -1,6 +1,7 @@
 import {useForm} from 'react-hook-form';
 import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 
 function OrderForm2(){
@@ -115,7 +116,7 @@ function OrderForm2(){
             <button className='btn btn-primary mb-2' type="submit"> Submit Order </button>
         </form>
         </div>
-
+        <Footer/>
     </>
     )
 }

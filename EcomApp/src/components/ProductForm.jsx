@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "./Navbar";
 import ProductList from "./ProductList";
+import Footer from "./Footer";
 
 function ProductForm(){
     const [product, setProduct] = useState({
@@ -54,6 +55,7 @@ function ProductForm(){
             </div>
 
             <ProductList/>
+            <Footer/>
         </>
     )
 }
